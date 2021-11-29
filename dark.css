@@ -1,0 +1,62 @@
+html {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+button {
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border: rgb(73, 73, 73) 1px solid;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+}
+
+#character {
+    width: 50px;
+    height: 45px;
+    background-color: none;
+    position: relative;
+    top: 150px;
+    background-image: url("BanduIcon.png");
+}
+
+.animate{
+    animation: jump 500ms infinite;
+}
+
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes jump {
+    0% {top: 150px;}
+    30% {top: 100px;}
+    70% {top: 100px;}
+    100% {top: 150px;}
+}
+
+@keyframes block {
+    0% {left: 480px;}
+    100% {left: -40px;}
+}
